@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wildeberries1$</title>
+	<style>
+		.card{
+			font-family: arial;
+			width: 156px;
+			height: 260px;
+		}
+		.card--mod{
+			position: relative;
+			font-family: sans-serif;
+		}
+		.card__textblock{
+			position: absolute;
+			bottom: 8px;
+			left: 3px;
+			font-size: 10px;
+			color: #cb11ab;
+			padding: 0 3px;
+    		border-radius: 20px;
+   			background-color: #fdeef9;
+		}
+		.card--img{
+			width: 156px;
+			height: 208px;
+			border-radius: 5px;
+		}
+		.card__good-price__now{
+			font-size: 15px;
+			margin-right: 4px;
+		}
+		.card__good-price__last{
+			color: #9999;
+			font-size: 10px;
+			text-decoration: line-through;
+			line-height: 15px;
+		}
+		.card__moreinfo--mod{
+			color: #9999;
+			font-size: 10px;
+		}
+		:hover.card--mod > div{
+			display: flex;
+		}
+		.card--mod__fasttravel{
+			position: absolute;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			top: 0;
+			margin-left: auto;
+    		margin-right: auto;
+    		display: none;
+    		align-items: center;
+    		justify-content: center;
+    		background-color: rgba(0, 0, 0, 0.15);
+    		width: 156px;
+    		height: 208px;
+    		border-radius: 10px;
+
+		}
+		.card--mod__fasttravel--button{
+			background-color: white;
+			border: 1px solid white;
+			opacity: 0.9;
+			border-radius: 15px;
+			font-size: 8px;
+			padding: 5px;
+			color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="card--mod">
+			<img src="coffee.jpeg" class="card--img">
+			<div class="card__textblock">
+				<span><strong>-47%</strong></span>
+			</div>
+			<div class="card--mod__fasttravel">
+				<button class="card--mod__fasttravel--button"><a href="google.com"> Быстрый просмотр</a></button>
+			</div>
+		</div>
+		<div class="card__good-price">
+			<span class="card__good-price__now"><strong>19.750 тг.</strong></span>
+			<span class="card__good-price__last">34 200тг</span>
+		</div>
+		<div class="card__moreinfo">
+			<span class="card__moreinfo--mod">Вкусное кофейное желе</span>
+		</div>
+	</div>
+</body>
+</html>
